@@ -46,11 +46,11 @@ class absol(torch.autograd.Function):
         grad_input = (2*grad_input) - 1
         return grad_output * grad_input
 
-class DSQConv(nn.Conv2d):
+class QConv(nn.Conv2d):
     def __init__(self, in_channels, out_channels, kernel_size, stride=1, padding=0, dilation=1, groups=1, bias=True,
                 momentum = 0.1,
                 num_bit = 0, QInput = True, bSetQ = True):
-        super(DSQConv, self).__init__(in_channels, out_channels, kernel_size, stride, padding, dilation, groups, bias)
+        super(QConv, self).__init__(in_channels, out_channels, kernel_size, stride, padding, dilation, groups, bias)
         self.num_bit = bit_num
         self.quan_input = QInput
         self.bit_range = 2**self.num_bit -1
@@ -204,11 +204,11 @@ class BasicBlock(nn.Module):
 
     def __init__(self, inplanes, planes, stride=1, downsample=None):
         super(BasicBlock, self).__init__()
-        self.conv1 = DSQConv(inplanes, planes, kernel_size=3, stride=stride,
+        self.conv1 = QConv(inplanes, planes, kernel_size=3, stride=stride,
                              padding=1, bias=False)
         self.bn1 = nn.BatchNorm2d(planes)
         self.relu = nn.ReLU(inplace=True)
-        self.conv2 = DSQConv(planes, planes, kernel_size=3, stride=1,
+        self.conv2 = QConv(planes, planes, kernel_size=3, stride=1,
                              padding=1, bias=False)
         self.bn2 = nn.BatchNorm2d(planes)
         self.shortcut = nn.Sequential()
