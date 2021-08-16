@@ -25,6 +25,7 @@ $ git clone https://github.com/cvlab-yonsei/DAQ.git
 Cifar-10 dataset (ResNet-20 architecture) 
 
 * First, download full-precision model into ``results/`` folder. **Link: [[weights](https://drive.google.com/file/d/1II9jtowxaGYde8_rYLs-qnPwzVcB3QYZ/view?usp=sharing)]**
+* Note that you create  ``results/`` directory manually.
 
 ```bash
 # Cifar-10 & ResNet-20 W1A1 model
