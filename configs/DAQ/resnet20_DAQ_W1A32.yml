@@ -18,7 +18,7 @@ train:
   dir: './results'
   batch_size: 256
   num_epochs: 400
-  model_dir: '.W32A1'
+  model_dir: '.W1A32'
 
 eval:
   batch_size: 100
