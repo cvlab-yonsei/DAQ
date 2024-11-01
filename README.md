@@ -14,8 +14,6 @@ For more information, checkout the project site [[website](https://cvlab.yonsei.
 ## Datasets
 * Cifar-10
     * This can be automatically downloaded by learning our code
-* ImageNet
-    * This is available at [here](http://www.image-net.org) 
 
 ## Training & Evaluation
 First, clone our github repository.
@@ -47,7 +45,5 @@ $ python cifar10_train.py --config configs/DAQ/resnet20_DAQ_W1A32.yml
 ```
 ---
 ## Credit
-* ImageNet training code: [[PyTorch official example code](https://github.com/pytorch/examples/blob/master/imagenet/main.py)]
-* ResNet-18 models: [[PyTorch official code](https://github.com/pytorch/vision/blob/master/torchvision/models/resnet.py)]
 * ResNet-20 model: [[ResNet on CIFAR10](https://github.com/akamaster/pytorch_resnet_cifar10/blob/master/resnet.py)] [[IRNet](https://github.com/XHPlus/IR-Net/blob/master/resnet-20-cifar10/1w1a/resnet.py)]
 * Quantized modules: [[DSQ](https://github.com/ricky40403/DSQ/blob/master/DSQConv.py#L18)]
