@@ -24,9 +24,6 @@ $ git clone https://github.com/cvlab-yonsei/DAQ.git
 ```
 Cifar-10 dataset (ResNet-20 architecture) 
 
-* First, download full-precision model into ``results/`` folder. **Link: [[weights](https://drive.google.com/file/d/1II9jtowxaGYde8_rYLs-qnPwzVcB3QYZ/view?usp=sharing)]**
-* Note that you create  ``results/`` directory manually.
-
 ```bash
 # Cifar-10 & ResNet-20 W1A1 model
 $ python cifar10_train.py --config configs/DAQ/resnet20_DAQ_W1A1.yml
@@ -42,13 +39,6 @@ ImageNet dataset (ResNet-18 architecture)
 # ImageNet & ResNet-18 W1A1 model
 # ImageNet & ResNet-18 W1A1 model
 ```
-
-## Using the pretrained models
-* ResNet-20 
-  * W1A1 [[weights](https://drive.google.com/file/d/1zq8zZO_YnrLkMPybzZLJEBuSg66eFV4g/view?usp=sharing)]
-  * W1A32 [[weights](https://drive.google.com/file/d/1SKHmms5kRLF_nLHf0qPbEO0JUOr34O5a/view?usp=sharing)]
-* ResNet-18
-  * Will be released
 
 ---
 ## Citation
