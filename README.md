@@ -31,14 +31,9 @@ $ python cifar10_train.py --config configs/DAQ/resnet20_DAQ_W1A1.yml
 $ python cifar10_train.py --config configs/DAQ/resnet20_DAQ_W1A32.yml
 ```
 
-ImageNet dataset (ResNet-18 architecture)
-
-- Will be released
-
-```bash
-# ImageNet & ResNet-18 W1A1 model
-# ImageNet & ResNet-18 W1A1 model
-```
+## Using the pretrained models
+* ResNet-20 
+  * You can use the pretrained models (W1A1, W1A32) in [[here](https://github.com/cvlab-yonsei/DAQ/tree/main/results)]
 
 ---
 ## Citation
